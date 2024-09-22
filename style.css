@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222831; /* Dark Blue Background */
+    color: #eeeeee; /* Light Gray Text */
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #00adb5; /* Teal */
+    color: #ffffff; /* White Text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+    animation: fadeIn 3s ease-in-out;
+}
+
+nav a {
+    color: #ffffff; /* White Links */
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+.section {
+    padding: 50px 0;
+    background-color: #393e46; /* Navy Blue for Section Backgrounds */
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #00adb5; /* Teal for Section Headings */
+    margin-bottom: 20px;
+}
+
+/* Project Card Styling */
+.project {
+    margin-bottom: 20px;
+    background-color: #eeeeee; /* Light gray background for better contrast */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #222831; /* Darker text for readability */
+}
+
+/* Project Hover Effect */
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Links */
+.project a {
+    color: #00adb5; /* Teal links for a pop of color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: #007b80; /* Darker teal on hover for a professional look */
+    text-decoration: underline;
+}
+/* Progress Bars */
+.skill {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff; /* White Text for Labels */
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #eeeeee; /* Light Gray */
+    border-radius: 5px;
+}
+
+.progress {
+    height: 20px;
+    background-color: #00adb5; /* Teal Progress Bar */
+    border-radius: 5px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #00adb5; /* Teal Button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007b80; /* Darker Teal on Hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00adb5; /* Teal Footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Profile Picture Styling */
+.profile-pic {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;  /* Makes the image circular */
+    width: 150px;        /* Adjust the size as needed */
+    height: 150px;
+    object-fit: cover;   /* Ensures the image is cropped nicely */
+}
+

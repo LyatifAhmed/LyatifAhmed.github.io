@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyatif Redzheb | Data Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 id="headline">Lyatif Redzheb</h1>
+            <p id="subheadline">Data Engineer | Cloud Solutions | Scalable Data Pipelines</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/linkedinprofile.png" alt="Lyatif Redzheb Photo" class="profile-pic">
+                <p>Hi, I’m <strong>Lyatif Redzheb</strong>, a Data Engineer with expertise in building scalable data pipelines and cloud infrastructure. I specialize in transforming raw data into valuable insights that drive business decisions.</p>
+    
+                <p>With a background in Computer Engineering and hands-on experience from the AiCore Data Engineering Bootcamp, I’ve worked extensively with technologies like <strong>AWS</strong>, <strong>Python</strong>, <strong>Databricks</strong>, and <strong>Kafka</strong> to solve complex data challenges. My focus is on creating efficient, reliable data solutions for both real-time and batch processing systems.</p>
+    
+                <p>I’m passionate about leveraging data to optimize processes and improve decision-making. I thrive on tackling technical challenges and continuously advancing my skills in cloud technologies and big data platforms.</p>
+    
+                <p>If you’re looking for a data engineer to help build innovative data solutions, feel free to <a href="#contact">reach out</a>.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>AWS Data Engineering Pipeline</h3>
+                <p>Built an end-to-end AWS-based pipeline to process and analyze large datasets in real time. Tools used: AWS S3, Kinesis, MSK, Databricks.</p>
+                <a href="https://github.com/LyatifAhmed/pinterest-data-pipeline313.git" target="_blank">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Multinational Data Centralisation Pipeline</h3>
+                <p>Developed a pipeline that centralized over 120,000 rows of sales data from multiple sources. Reduced query time to under 1 millisecond. Tools used: PostgreSQL, Python, Airflow.</p>
+                <a href="https://github.com/LyatifAhmed/multinational-retail-data-centralisation276.git" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill">
+                <label for="python">Python</label>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="aws">AWS</label>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label for="sql">SQL</label>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/latifmutlu@gmail.com" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Lyatif Redzheb. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
