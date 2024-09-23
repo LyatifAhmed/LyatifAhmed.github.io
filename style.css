@@ -84,28 +84,47 @@ h2 {
     color: #007b80; /* Darker teal on hover for a professional look */
     text-decoration: underline;
 }
-/* Progress Bars */
+/* Skills Section */
 .skill {
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.skill i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #0077B5; /* Change to match the skill */
 }
 
 label {
     font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-    color: #ffffff; /* White Text for Labels */
+    flex: 1;
+    color: #d3c9c9;
 }
 
 .progress-bar {
     width: 100%;
-    background-color: #eeeeee; /* Light Gray */
+    background-color: #e0e0e0;
     border-radius: 5px;
+    overflow: hidden;
+    margin-left: 20px;
 }
 
 .progress {
     height: 20px;
-    background-color: #00adb5; /* Teal Progress Bar */
+    background-color: #00adb5; /* Skill bar color */
     border-radius: 5px;
+    position: relative;
+}
+
+.progress::after {
+    content: attr(data-label);
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    color: #fff;
+    font-weight: bold;
 }
 
 /* Contact Form */
@@ -167,3 +186,35 @@ footer p {
     object-fit: cover;   /* Ensures the image is cropped nicely */
 }
 
+/* Button styling */
+button {
+    background-color: #0077B5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #005582; /* A brighter version of LinkedIn blue */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Text shadow for better readability */
+#skills, #contact {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Adjust for light or dark backgrounds */
+}
+
+/* Contact and Skills section font color */
+#skills, #contact {
+    color: rgb(248, 245, 245); /* Set font color to white */
+}
+/* Tone down the background */
+#skills-background, #contact-background {
+    filter: brightness(0.7); /* Reduces brightness by 30% */
+}
