@@ -218,3 +218,17 @@ button:hover {
 #skills-background, #contact-background {
     filter: brightness(0.7); /* Reduces brightness by 30% */
 }
+.volunteer-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.volunteer-logo {
+    width: 100px;  /* Adjust the size as needed */
+    margin-right: 20px;
+}
+
+.volunteer-details {
+    color: #eeeeee; /* Text color for readability */
+}
